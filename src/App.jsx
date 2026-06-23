@@ -7,8 +7,7 @@ function App() {
       <Header titulo= "Lanchonete Xpress" 
         subtitulo= "O melhor da Região"/>
         
-      <Login login="Login" 
-        entrar="Entre aqui"/>
+      <Login login="Login"/>
     </>
 
   )
