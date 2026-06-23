@@ -1,8 +1,8 @@
-function Login(){
+function Login(props){
     return(
 <>
-        <h2>Login</h2>
-        <p>Entre aqui: </p>
+        <h2>{props.login}</h2>
+        <p>{props.entrar}</p>
         
 </>       
     )
