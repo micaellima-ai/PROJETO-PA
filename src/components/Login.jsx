@@ -10,6 +10,9 @@ function Login(props) {
                 <br />
                 <input type="password" id="id_senha" placeholder="Senha" />
                 <button id="bt_enviar">Entrar</button>
+                
+
+                <a href="">Esqueceu a Senha?</a>
 
             </div>
 
