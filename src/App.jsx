@@ -1,7 +1,8 @@
 import Header from "./components/Header";
 import Login from "./components/login";
 import CardProd from "./components/CardProd";
-import Funcionarios from "./components/Funcionarios"; 
+import Funcionarios from "./components/Funcionarios";
+import Contador from "./components/Contador"; 
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <CardProd lanche="Refrigerante" valor="R$ 6,00" />
       
       <Funcionarios nome="João" cargo="Atendente"/>
+
+      <Contador/>
       
     </>
 

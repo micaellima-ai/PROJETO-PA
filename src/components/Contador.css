@@ -1,0 +1,42 @@
+.add {
+    padding: 10px;
+    width: 260px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+    /* O truque de mestre: alinha tudo verticalmente e cria o espaçamento ideal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; 
+
+    margin: 50px auto;
+}
+
+.add h1 {
+    font-size: 54px;
+    margin: 0 0 10px 0; 
+    color: #333333;
+}
+
+.add button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add button:hover {
+    background-color: #e2e2e2;
+}
+
+.add button:active {
+    transform: scale(0.98); /* Dá um efeito sutil de clique ao pressionar */
+}
+
