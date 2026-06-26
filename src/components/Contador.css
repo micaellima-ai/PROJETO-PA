@@ -3,11 +3,11 @@
     width: 450px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
 
     margin: 30px auto;
     border: 1px solid #e0e0e0;
@@ -17,7 +17,7 @@
 .contador-container h1 {
     font-size: 36px;
     font-weight: normal;
-    margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
     color: #000000;
 }
 
@@ -36,7 +36,7 @@
 
 
 .bt_limpar {
-    margin-top: 8px; 
+    margin-top: 8px;
 }
 
 
@@ -57,5 +57,5 @@
 }
 
 .contador-container button:active {
-    transform: scale(0.96); 
+    transform: scale(0.96);
 }

@@ -1,30 +1,41 @@
 import Header from "./components/Header";
 import Login from "./components/login";
-import CardProd from "./components/CardProd";
 import Funcionarios from "./components/Funcionarios";
-import Contador from "./components/Contador"; 
+import Contador from "./components/Contador";
+import CalculadoraPedidos from "./components/CalculadoraPedidos";
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Header 
-        titulo="Lanchonete Xpress" 
+    <div className="app-container">
+
+      <Header
+        titulo="Lanchonete Xpress"
         subtitulo="O melhor da Região"
       />
-        
-      <Login login="Login"/>
 
-      
-      <CardProd lanche="X-Burguer" valor="R$ 25,00" />
-      <CardProd lanche="X-Salada" valor="R$ 17,90" />
-      <CardProd lanche="Refrigerante" valor="R$ 6,00" />
-      
-      
-      <Contador lanche="X-Burguer" preco={25} />
+      <main className="main-content">
 
-      <Funcionarios nome="João" cargo="Atendente"/>
-    </>
+        <Login login="Login" />
+
+
+        <h2>Cardápio</h2>
+        <div className="cards-row">
+          <Contador lanche="X-Burguer" preco={15.5} />
+          <Contador lanche="X-Salada" preco={17.5} />
+          <Contador lanche="Refrigerante" preco={6} />
+        </div>
+
+
+        <h2>Fechamento do Pedido</h2>
+        <CalculadoraPedidos />
+
+
+        <Funcionarios nome="João" cargo="Atendente" />
+      </main>
+
+    </div>
   )
 }
 
-export default App
+export default App;
