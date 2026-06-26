@@ -1,19 +1,31 @@
-import { useState } from 'react'    
+import { useState } from 'react'
 import './Contador.css'
 
-function Contador() {
-    const [contador, setContador] = useState(0)
+function Contador({ lanche, preco }) {
+    
+    const [quantidade, setQuantidade] = useState(0)
+
+    
+    const precoTotal = quantidade * preco
+
     return (
-        <>
-            <div className='add'>
-                <h1>{contador}</h1>
-                <button onClick={() => setContador(contador +1)}>Adicionar</button>
-                
-                <button onClick={() => setContador(contador -1)}>Diminuir</button>
-                
-                <button onClick={() => setContador(0)}>Limpar</button>
+        <div className='contador-container'>
+            <h1>{lanche}</h1>
+            
+            <p>Preço: R$ {preco}</p>
+            <p>Quantidade {quantidade}</p>
+            <p><strong>Preço Total: R$ {precoTotal}</strong></p>
+
+            <div className='botoes-grupo'>
+
+                <button onClick={() => setQuantidade(quantidade + 1)}>Adicionar</button>
+                <button onClick={() => { if (quantidade > 0) setQuantidade(quantidade - 1) }}>Remover</button>
+               
+                <button className='bt_impar' onClick={() => setQuantidade(0)}>Limpar</button>
+
             </div>
-        </>
+        </div>
     )
 }
+
 export default Contador

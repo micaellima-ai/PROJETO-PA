@@ -1,42 +1,61 @@
-.add {
-    padding: 10px;
-    width: 260px;
+.contador-container {
+    padding: 20px;
+    width: 450px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     
-    /* O truque de mestre: alinha tudo verticalmente e cria o espaçamento ideal */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px; 
+    gap: 8px; 
 
-    margin: 50px auto;
+    margin: 30px auto;
+    border: 1px solid #e0e0e0;
+    text-align: center;
 }
 
-.add h1 {
-    font-size: 54px;
+.contador-container h1 {
+    font-size: 36px;
+    font-weight: normal;
     margin: 0 0 10px 0; 
+    color: #000000;
+}
+
+.contador-container p {
+    font-size: 16px;
+    margin: 4px 0;
     color: #333333;
 }
 
-.add button {
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
+
+.botoes-grupo {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+
+.bt_limpar {
+    margin-top: 8px; 
+}
+
+
+.contador-container button {
+    padding: 4px 10px;
+    font-size: 12px;
     color: #333333;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     border: 1px solid #cccccc;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
-    font-weight: 500;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.add button:hover {
-    background-color: #e2e2e2;
+.contador-container button:hover {
+    background-color: #f5f5f5;
+    border-color: #adadad;
 }
 
-.add button:active {
-    transform: scale(0.98); /* Dá um efeito sutil de clique ao pressionar */
+.contador-container button:active {
+    transform: scale(0.96); 
 }
-
