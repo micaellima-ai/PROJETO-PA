@@ -6,6 +6,12 @@ import CalculadoraPedidos from "./components/CalculadoraPedidos";
 import './App.css';
 
 function App() {
+  const lanches =[
+    {id: 1, nome: "X-salada", preco: 17.50},
+    {id: 2, nome :"X-Burguer", preco: 15.50},
+    {id: 3, nome :"Refrigerante", preco: 6.00}
+  ]
+
   return (
     <div className="app-container">
 
@@ -17,6 +23,14 @@ function App() {
       <main className="main-content">
 
         <Login login="Login" />
+
+        {lanches.map(lanche=>(
+          <cardProd
+          key ={lanche.id}
+          nome ={lanche.name}
+          preco ={lanche.preco}
+          />
+        ))}
 
 
         <h2>Cardápio</h2>
